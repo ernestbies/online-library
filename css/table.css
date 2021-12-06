@@ -1,0 +1,133 @@
+.styled-table {
+    width: 1000px;
+    border: 1px solid black;
+    background-color: white;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    font-family: Lato, serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: black;
+}
+
+.styled-tr {
+    border: 1px solid black;
+}
+
+.action-th {
+    width: 10%;
+}
+
+.styled-th {
+    border: 1px solid black;
+    color: navajowhite;
+    height: 60px;
+}
+
+.styled-td {
+    text-align: left;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.styled-td-action {
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.styled-table-head {
+    background-color: #332e2e;
+}
+
+.styled-footer-text {
+    font-weight: bold;
+}
+
+.icon-style {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.icon-style:hover {
+    opacity: 0.5;
+    transform: scale(1.2);
+}
+
+@media (max-width: 1000px) {
+    .styled-table {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 720px) {
+    .styled-table {
+        transform: scale(1);
+        display: block;
+    }
+
+    .styled-table-body {
+        display: block;
+    }
+
+    .styled-table-footer {
+        display: block;
+    }
+
+    .styled-tr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #f5f5f5;
+        width: 100%;
+    }
+
+    .styled-tr:nth-child(odd) {
+        background-color: #e8e8e8;
+    }
+
+    .styled-tr[type = 'footer'] {
+        background-color: navajowhite;
+    }
+
+    .styled-th {
+        display: block;
+    }
+
+    .styled-td {
+        user-select: none;
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        border: none;
+        border-bottom: 1px solid white;
+        position: relative;
+        text-align: right;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .styled-td[type = 'footer'] {
+        border-bottom: 0;
+    }
+
+    .styled-table-head {
+        display: none;
+    }
+
+    .styled-footer {
+        display: block;
+    }
+}
+
+@media (max-width: 528px) {
+    .styled-td {
+        max-width: 300px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,104 @@
+.add-form {
+    width: 100%;
+    max-width: 400px;
+    height: 600px;
+    background-color: white;
+    border: 1px solid navajowhite;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-top {
+    flex: 3;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+    ),
+    url("../img/book-bg.png") fixed;
+    background-size: contain;
+}
+
+.form-item {
+    margin: 25px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-item label {
+    font-size: 16px;
+    color: navajowhite;
+    font-family: "Roboto Condensed", serif;
+    margin-bottom: 10px;
+}
+
+.form-item input, select {
+    background-color: #00000099;
+    border: 1px solid navajowhite;
+    padding: 10px;
+    color: white;
+    font-family: "Roboto Condensed", serif;
+}
+
+.form-item input, select {
+    width: 80%;
+}
+
+.form-item input:focus {
+    outline: 1px solid navajowhite;
+}
+
+.form-item select option {
+    background-color: black;
+    font-size: 12px;
+    margin: 0;
+}
+
+.form-item-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-bottom {
+    flex: 1;
+    background-color: #1f1c1c;
+    border-top: 1px solid navajowhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-bottom div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.form-bottom p {
+    font-size: 12px;
+    color: #cccccc;
+    font-family: "Roboto Condensed", serif;
+    margin-top: 10px;
+}
+
+.form-button-style {
+    background-color: black;
+}
+
+.form-button-style:disabled {
+    cursor: auto;
+    color: #333;
+}

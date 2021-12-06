@@ -1,2 +1,3 @@
 # online-library
-Online library created with JavaScript, HTML and CSS.
+
+Online library created with JavaScript, HTML and CSS only.
