@@ -16,7 +16,7 @@
     pointer-events: none;
 }
 
-.logo-container {
+.navbar-logo-container {
     height: 100%;
     display: flex;
     align-items: center;
