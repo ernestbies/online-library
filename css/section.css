@@ -85,6 +85,10 @@
     line-height: 1.3;
 }
 
+#start {
+    padding-bottom: 75px;
+}
+
 @media (max-width: 480px) {
     .quote-section-text {
         width: 80%;
