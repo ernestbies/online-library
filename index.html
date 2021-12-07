@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	<link rel="icon" href="img/logo.png" />
+    <link rel="icon" href="img/logo.png"/>
     <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" href="css/navbar.css"/>
     <link rel="stylesheet" href="css/header.css"/>
@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="css/footer.css"/>
     <link rel="stylesheet" href="css/table.css"/>
     <title>Online library</title>
-	<meta name="author" content="Ernest Bieś">
-	<meta name="description" content="Online library."/>
-	<meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="author" content="Ernest Bieś">
+    <meta name="description" content="Online library."/>
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
 </head>
 <body>
     <nav class="navbar">
@@ -24,142 +24,147 @@
         </div>
     </nav>
 
-    <div class="page-header">
-        <video autoplay muted loop class="video-background">
-            <source src="videos/library.mp4" type="video/mp4">
-        </video>
-        <div class="intro-container">
-            <div class="logo-container">
-                <img alt="navbar-logo" src="./img/logo.svg" class="logo-header"/>
-                <p class="logo-title">Online library</p>
-            </div>
-            <p class="page-subtitle"></p>
-            <p class="page-desc">The online library allows you to view and manage the books presented in the table. The book database is saved locally in the user's browser.</p>
-            <div class="buttons-container">
-                <a class="styled-button" href="#start">Get started</a>
-                <a class="styled-button" href="#tutorial">Tutorial</a>
-            </div>
-            <div class="book-icon-box">
-                <img alt="book-icon" src="./img/logo.svg" class="book-icon"/>
-            </div>
-        </div>
-    </div>
-
-    <div id="tutorial" class="section">
-        <div class="section-title-container">
-            <p class="section-subtitle">How it works?</p>
-            <p class="section-title">Features</p>
-            <div class="line-divider">
-                <div class="styled-line"></div>
-                <img src="img/bookmark.svg" class="line-style">
-                <div class="styled-line"></div>
-            </div>
-        </div>
-
-        <div class="faq-container">
-            <div class="faq-box">
-                <div class="faq-box-icon-container">
-                    <img alt="book" src="img/book.svg" class="book-icon">
+    <div class="container">
+        <div class="page-header">
+            <video autoplay muted loop class="video-background">
+                <source src="videos/library.mp4" type="video/mp4">
+            </video>
+            <div class="intro-container">
+                <div class="logo-container">
+                    <img alt="navbar-logo" src="./img/logo.svg" class="logo-header"/>
+                    <p class="logo-title">Online library</p>
                 </div>
-                <p class="faq-box-title">
-                    Add
-                </p>
-                <p class="faq-box-text">
-                    Add a new item in the library by filling out the form.
-                </p>
-            </div>
-            <div class="faq-box">
-                <div class="faq-box-icon-container">
-                    <img alt="book" src="img/books-table.svg" class="book-icon">
-                </div>
-                <p class="faq-box-title">
-                    Browse
-                </p>
-                <p class="faq-box-text">
-                    Browse all added books in the table that is displayed on the home page.
-                </p>
-            </div>
-            <div class="faq-box">
-                <div class="faq-box-icon-container">
-                    <img alt="book" src="img/book-reader.svg" class="book-icon">
-                </div>
-                <p class="faq-box-title">
-                    Revisit
-                </p>
-                <p class="faq-box-text">
-                    All data will be saved using the localStorage mechanism in the browser.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="quote-section">
-        <p class="quote-section-text">My aim is to put down on paper what I see and what I feel in the best and simplest way<br>— Ernest Hemingway</p>
-    </div>
-
-    <div class="section" id="start">
-        <div class="section-title-container">
-            <p class="section-subtitle">Add a new book</p>
-            <p class="section-title">Book adding form</p>
-            <div class="line-divider">
-                <div class="styled-line"></div>
-                <img src="img/bookmark.svg" class="line-style">
-                <div class="styled-line"></div>
-            </div>
-        </div>
-
-        <form id="add-form" name="add-form" class="add-form">
-            <div class="form-top">
-                <div class="form-item">
-                    <label for="name">Book name</label>
-                    <input type="text" id="name" name="name" autocomplete="off" onkeyup="validateForm()"
-                           placeholder="Book name (at least 1 letter) ..." minlength="1" required>
-                </div>
-                <div class="form-item">
-                    <label for="author">Book author</label>
-                    <input type="text" id="author" name="author" autocomplete="off" onkeyup="validateForm()"
-                           placeholder="Book author (at least 3 letters) ..." minlength="3" required>
-                </div>
-                <div class="form-item-column">
-                    <div class="form-item">
-                        <label for="priority">Priority</label>
-                        <input type="number" id="priority" name="priority" onchange="validateForm()"
-                               autocomplete="off" value="1" min="1" max="5" required
-                               onkeydown="return false" placeholder="Priority (1-5)..."/>
-                    </div>
-                    <div class="form-item">
-                        <label for="category">Category</label>
-                        <select id="category" name="category" required onchange="validateForm()">
-                            <option value="Drama">Drama</option>
-                            <option value="Thriller">Thriller</option>
-                            <option value="Sci-Fi">Sci-Fi</option>
-                        </select>
-                    </div>
+                <p class="page-subtitle"></p>
+                <p class="page-desc">The online library allows you to view and manage the books presented in the table. The
+                    book database is saved locally in the user's browser.</p>
+                <div class="buttons-container">
+                    <a class="styled-button" href="#start">Get started</a>
+                    <a class="styled-button" href="#tutorial">Tutorial</a>
                 </div>
                 <div class="book-icon-box">
                     <img alt="book-icon" src="./img/logo.svg" class="book-icon"/>
                 </div>
             </div>
-            <div class="form-bottom">
-                <div>
-                    <button id="add-button" type="button" class="styled-button form-button-style" onclick="addBook()" disabled>Add book</button>
-                    <button type="reset" class="styled-button form-button-style" onclick="clearForm()">Clear</button>
+        </div>
+
+        <div id="tutorial" class="section">
+            <div class="section-title-container">
+                <p class="section-subtitle">How it works?</p>
+                <p class="section-title">Features</p>
+                <div class="line-divider">
+                    <div class="styled-line"></div>
+                    <img src="img/bookmark.svg" class="line-style">
+                    <div class="styled-line"></div>
                 </div>
-                <p>Fill in all required fields to add new item.</p>
-            </div>
-        </form>
-
-        <div class="section-title-container">
-            <p class="section-subtitle">Browse the list of books</p>
-            <p class="section-title">Book list table</p>
-            <div class="line-divider">
-                <div class="styled-line"></div>
-                <img alt="bookmark" src="img/bookmark.svg" class="line-style">
-                <div class="styled-line"></div>
             </div>
 
-            <table class="styled-table">
-                <thead class="styled-table-head">
+            <div class="faq-container">
+                <div class="faq-box">
+                    <div class="faq-box-icon-container">
+                        <img alt="book" src="img/book.svg" class="book-icon">
+                    </div>
+                    <p class="faq-box-title">
+                        Add
+                    </p>
+                    <p class="faq-box-text">
+                        Add a new item in the library by filling out the form.
+                    </p>
+                </div>
+                <div class="faq-box">
+                    <div class="faq-box-icon-container">
+                        <img alt="book" src="img/books-table.svg" class="book-icon">
+                    </div>
+                    <p class="faq-box-title">
+                        Browse
+                    </p>
+                    <p class="faq-box-text">
+                        Browse all added books in the table that is displayed on the home page.
+                    </p>
+                </div>
+                <div class="faq-box">
+                    <div class="faq-box-icon-container">
+                        <img alt="book" src="img/book-reader.svg" class="book-icon">
+                    </div>
+                    <p class="faq-box-title">
+                        Revisit
+                    </p>
+                    <p class="faq-box-text">
+                        All data will be saved using the localStorage mechanism in the browser.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="quote-section">
+            <p class="quote-section-text">My aim is to put down on paper what I see and what I feel in the best and simplest
+                way<br>— Ernest Hemingway</p>
+        </div>
+
+        <div class="section" id="start">
+            <div class="section-title-container">
+                <p class="section-subtitle">Add a new book</p>
+                <p class="section-title">Book adding form</p>
+                <div class="line-divider">
+                    <div class="styled-line"></div>
+                    <img src="img/bookmark.svg" class="line-style">
+                    <div class="styled-line"></div>
+                </div>
+            </div>
+
+            <form id="add-form" name="add-form" class="add-form">
+                <div class="form-top">
+                    <div class="form-item">
+                        <label for="name">Book name</label>
+                        <input type="text" id="name" name="name" autocomplete="off" onkeyup="validateForm()"
+                               placeholder="Book name (at least 1 letter) ..." minlength="1" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="author">Book author</label>
+                        <input type="text" id="author" name="author" autocomplete="off" onkeyup="validateForm()"
+                               placeholder="Book author (at least 3 letters) ..." minlength="3" required>
+                    </div>
+                    <div class="form-item-column">
+                        <div class="form-item">
+                            <label for="priority">Priority</label>
+                            <input type="number" id="priority" name="priority" onchange="validateForm()"
+                                   autocomplete="off" value="1" min="1" max="5" required
+                                   onkeydown="return false" placeholder="Priority (1-5)..."/>
+                        </div>
+                        <div class="form-item">
+                            <label for="category">Category</label>
+                            <select id="category" name="category" required onchange="validateForm()">
+                                <option value="Drama">Drama</option>
+                                <option value="Thriller">Thriller</option>
+                                <option value="Sci-Fi">Sci-Fi</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="book-icon-box">
+                        <img alt="book-icon" src="./img/logo.svg" class="book-icon"/>
+                    </div>
+                </div>
+                <div class="form-bottom">
+                    <div>
+                        <button id="add-button" type="button" class="styled-button form-button-style" onclick="addBook()"
+                                disabled>Add book
+                        </button>
+                        <button type="reset" class="styled-button form-button-style" onclick="clearForm()">Clear</button>
+                    </div>
+                    <p>Fill in all required fields to add new item.</p>
+                </div>
+            </form>
+
+            <div class="section-title-container">
+                <p class="section-subtitle">Browse the list of books</p>
+                <p class="section-title">Book list table</p>
+                <div class="line-divider">
+                    <div class="styled-line"></div>
+                    <img alt="bookmark" src="img/bookmark.svg" class="line-style">
+                    <div class="styled-line"></div>
+                </div>
+
+                <table class="styled-table">
+                    <thead class="styled-table-head">
                     <tr class="styled-tr">
                         <th class="styled-th">
                             Book name
@@ -177,11 +182,11 @@
 
                         </th>
                     </tr>
-                </thead>
-                <tbody id="book-items" class="styled-table-body">
+                    </thead>
+                    <tbody id="book-items" class="styled-table-body">
 
-                </tbody>
-                <tfoot class="styled-footer">
+                    </tbody>
+                    <tfoot class="styled-footer">
                     <tr type="footer" class="styled-tr">
                         <td type="footer" class="styled-td">
                             <div>
@@ -189,14 +194,14 @@
                             </div>
                         </td>
                     </tr>
-                </tfoot>
-            </table>
+                    </tfoot>
+                </table>
+            </div>
         </div>
+        <footer class="footer">
+            <p class="footer-text">App developed by Ernest Bieś. &copy; ernestbies.com 2021</p>
+        </footer>
     </div>
-
-    <footer class="footer">
-        <p class="footer-text">App developed by Ernest Bieś. &copy; ernestbies.com 2021</p>
-    </footer>
 
     <script src="js/formFunctions.js"></script>
     <script src="js/tableFunctions.js"></script>

@@ -1,3 +1,7 @@
+.container {
+    position: relative;
+}
+
 .section {
     min-height: 600px;
     background-color: white;
