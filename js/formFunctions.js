@@ -24,8 +24,8 @@ const clearForm = () => {
 }
 
 const validateForm = () => {
-    ((formName.value !== '' && formName.value.length >= 1) &&
-        (formAuthor.value !== '' && formAuthor.value.length >= 3)) ?
+    ((/\S/.test(formName.value) && formName.value.length >= 1) &&
+        (/\S/.test(formAuthor.value) && formAuthor.value.length >= 3)) ?
         submitButton.disabled = false : submitButton.disabled = true;
 }
 
